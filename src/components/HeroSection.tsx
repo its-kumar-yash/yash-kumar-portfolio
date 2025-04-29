@@ -50,12 +50,11 @@ export default function HeroSection() {
               I'm a <span className="text-purple-500">Fullstack Developer</span>{" "}
               and <span className="text-purple-500">AI Enthusiast</span> based
               in New Delhi, passionate about building intelligent, high-impact
-              solutions. I specialize in developing robust web applications with{" "}
-              <span className="text-purple-500">Next.js</span> and crafting
-              AI-driven systems that solve real-world problems. Beyond coding, I
-              enjoy exploring new technologies and sharpening my problem-solving
-              skills through competitive programming. Always learning, always
-              building.
+              solutions. I specialize in developing robust applications with and
+              crafting AI-driven systems that solve real-world problems. Beyond
+              coding, I enjoy exploring new technologies and sharpening my
+              problem-solving skills through competitive programming. Always
+              learning, always building.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
