@@ -22,77 +22,78 @@ interface Experience {
   technologies: string[];
 }
 
-export default function ExperienceSection() {
-  const experiences: Experience[] = [
-    {
-      company: "Zelo Innovations Pvt. Ltd.",
-      location: "Delhi, India",
-      startDate: "Jun 2024",
-      endDate: "Jul 2024",
-      title: "Software Engineer Intern",
-      achievements: [
-        {
-          text: "Built a RAG pipeline with hybrid search, improving retrieval accuracy by 20%, leading to 50% fewer failed queries.",
-          highlights: [
-            {
-                text: "RAG pipeline",
-                color: "text-primary"
-            },
-            {
-              text: "50%",
+const experiences: Experience[] = [
+  {
+    company: "Zelo Innovations Pvt. Ltd.",
+    location: "Delhi, India",
+    startDate: "Jun 2024",
+    endDate: "Jul 2024",
+    title: "Software Engineer Intern",
+    achievements: [
+      {
+        text: "Built a RAG pipeline with hybrid search, improving retrieval accuracy by 20%, leading to 50% fewer failed queries.",
+        highlights: [
+          {
+              text: "RAG pipeline",
               color: "text-primary"
-            },
-            {
-              text: "20%",
-              color: "text-primary"
-            }
-          ]
-        },
-        {
-          text: "Developed a Mock Server using Postman and Mockoon to streamline API testing for the frontend.",
-          highlights: [
-            {
-              text: "Mock Server",
-              color: "text-primary"
-            },
-            {
-              text: "Postman",
-              color: "text-primary"
-            },
-            {
-              text: "Mockoon",
-              color: "text-primary"
-            }
-          ]
+          },
+          {
+            text: "50%",
+            color: "text-primary"
+          },
+          {
+            text: "20%",
+            color: "text-primary"
+          }
+        ]
+      },
+      {
+        text: "Developed a Mock Server using Postman and Mockoon to streamline API testing for the frontend.",
+        highlights: [
+          {
+            text: "Mock Server",
+            color: "text-primary"
+          },
+          {
+            text: "Postman",
+            color: "text-primary"
+          },
+          {
+            text: "Mockoon",
+            color: "text-primary"
+          }
+        ]
 
-        },
-        {
-          text: "Revamped the frontend by collaborating with the design team, incorporating dynamic animations."
-        },
-        {
-          text: "Resolved 30+ bugs to improve user experience and application stability.",
-          highlights: [
-            {
-              text: "30+",
-              color: "text-primary"
-            }
-          ]
-        },
-      ],
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "Tailwind CSS",
-        "Mockoon",
-        "Postman",
-        "Python",
-        "ChromeDB",
-        "Qdrant",
-        "LangChain",
-        "CohereAPI"
-      ],
-    },
-  ];
+      },
+      {
+        text: "Revamped the frontend by collaborating with the design team, incorporating dynamic animations."
+      },
+      {
+        text: "Resolved 30+ bugs to improve user experience and application stability.",
+        highlights: [
+          {
+            text: "30+",
+            color: "text-primary"
+          }
+        ]
+      },
+    ],
+    technologies: [
+      "Next.js",
+      "Typescript",
+      "Tailwind CSS",
+      "Mockoon",
+      "Postman",
+      "Python",
+      "ChromeDB",
+      "Qdrant",
+      "LangChain",
+      "CohereAPI"
+    ],
+  },
+];
+
+export default function ExperienceSection() {
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -167,7 +168,7 @@ export default function ExperienceSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="group h-full border border-border/50 bg-background/50 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:shadow-md dark:hover:shadow-purple-900/20 !gap-3">
+              <Card className="group h-full border border-border/50 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:shadow-md dark:hover:shadow-purple-900/20 !gap-3">
                 <CardHeader className="pb-2">
                   <div className="flex justify-between items-start">
                     <div className="flex flex-col space-y-1">
