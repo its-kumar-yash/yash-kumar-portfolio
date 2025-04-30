@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import ThemeToggle from "@/components/ThemeToggle";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         <ThemeProvider
           attribute="class"
@@ -35,7 +37,19 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-           <div className="fixed top-4 right-4 z-50">
+          <Toaster
+            position="bottom-right"
+            toastOptions={{
+              duration: 3000,
+              style: {
+                background: "hsl(var(--card))",
+                color: "hsl(var(--primary))",
+                border: "1px solid hsl(var(--border))",
+              },
+            }}
+          />
+
+          <div className="fixed top-4 right-4 z-50">
             <ThemeToggle />
           </div>
           {children}
