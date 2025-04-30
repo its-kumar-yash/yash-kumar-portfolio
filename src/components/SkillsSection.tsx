@@ -60,7 +60,7 @@ const CATEGORY_ICONS = {
   Database: { icon: <Database size={28} />, color: 'text-amber-500 bg-amber-500/10' },
   Languages: { icon: <Terminal size={28} />, color: 'text-violet-600 bg-violet-600/10' },
   'ML & Data Science': { icon: <BrainCircuit size={28} />, color: 'text-cyan-600 bg-cyan-600/10' },
-  Tools: { icon: <Wrench size={28} />, color: 'text-gray-600 bg-gray-600/10' }
+  Tools: { icon: <Wrench size={28} />, color: 'text-slate-500 bg-slate-500/10' }
 }
 
 export default function SkillsSection() {
